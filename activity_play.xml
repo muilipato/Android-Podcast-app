@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Play">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/play_audio_art"
+            style="@style/play_image_style"
+            android:contentDescription="@string/app_name" />
+        <TextView
+            android:id="@+id/play_title"
+            style="@style/title_style"/>
+        <TextView
+            android:id="@+id/play_subtitle"
+            style="@style/subtitle_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/separate_line_style">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/home_icon"
+            android:src="@drawable/home"
+            style="@style/play_icons"
+            android:contentDescription="@string/app_name" />
+        <ImageView
+            android:id="@+id/play_icon"
+            android:src="@drawable/play"
+            style="@style/play_icons"
+            android:contentDescription="@string/app_name" />
+        <ImageView
+            android:id="@+id/pause_icon"
+            android:src="@drawable/pause"
+            style="@style/play_icons"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+</LinearLayout>
